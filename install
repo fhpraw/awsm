@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# update
+sudo pacman -Syyu --noconfirm
+
+# install all packages in pack.csv
+sudo pacman -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs)
+
+# enable TLP
+sudo systemctl enable tlp
+
+# set touchpad
+sudo mkdir -p /etc/X11/xorg.conf.d/
+sudo cp -v config/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+
+# set font 
+mkdir -p ~/.local/share/fonts/
+curl -LJO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+unzip JetBrainsMono.zip -d ~/.local/share/fonts/
+rm JetBrainsMono.zip
+mkdir -p ~/.config/fontconfig/
+cp -v config/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf
+
+# set X configs
+cp -v config/.xinitrc ~/.xinitrc
+cp -v config/.xprofile ~/.xprofile
+cp -v config/.Xresources ~/.Xresources
+
+# set bash configs
+cat ~/.bashrc config/.bashrc > ~/.bashrc
+echo 'set -o vi' >> ~/.bashrc
+
+# install plugins for neovim
+curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p ~/.config/nvim/
+cp -v config/nvim/init.vim ~/.config/nvim/init.vim
+nvim +PlugInstall +qall
+echo 'source "$HOME/.local/share/nvim/plugged/gruvbox/gruvbox_256palette.sh"' >> ~/.bashrc
+
+# install awesome config
+cp -r -v config/awesome ~/.config/
+
+# make directories
+mkdir -p ~/Images/Screenshots/
