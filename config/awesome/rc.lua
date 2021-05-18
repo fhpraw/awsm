@@ -71,6 +71,9 @@ screenshot_fullscreen = "maim -u " .. screenshot_dir
 screenshot_window = "maim -u -i $(xdotool getactivewindow) " .. screenshot_dir
 screenshot_selected = "maim -u -s -o " .. screenshot_dir
 
+-- set wallpaper
+setwallpaper = "sxiv -r -t -o ~/Images/Wallpapers/ | xargs -I{} cp {} ~/.config/awesome/themes/kuro/background.jpg && pkill -HUP awesome"
+
 -- set default browser
 browser = "firefox"
 
@@ -288,6 +291,9 @@ globalkeys = gears.table.join(
     awful.key({}, "XF86Search", function() awful.spawn(browser) end),
     awful.key({}, "XF86LaunchA", function() menubar.show() end),
     awful.key({}, "XF86Explorer", function() awful.spawn(terminal .. " -e ranger") end),
+
+    -- set wallpaper
+    awful.key({modkey}, "w", function() awful.spawn.with_shell(setwallpaper) end),
 
     -- screenshots
     awful.key({modkey}, "Print", function() awful.spawn.with_shell(screenshot_fullscreen) end),
