@@ -12,7 +12,7 @@ Xft.rgba: rgb
 xterm*faceName: JetBrainsMono Nerd Font
 xterm*faceSize: 9
 xterm*selectToClipboard: true
-xterm*internalBorder: 10
+xterm*internalBorder: 3
 ! -----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
 ! Description: Retro groove colorscheme generalized

@@ -176,9 +176,9 @@ awful.screen.connect_for_each_screen(function(s)
     -- We need one layoutbox per screen.
     s.mylayoutbox = awful.widget.layoutbox(s)
     s.mylayoutbox:buttons(gears.table.join(
-        awful.button({}, 1, function() awful.layout.inc( 1) end),
+        awful.button({}, 1, function() awful.layout.inc(1) end),
         awful.button({}, 3, function() awful.layout.inc(-1) end),
-        awful.button({}, 4, function() awful.layout.inc( 1) end),
+        awful.button({}, 4, function() awful.layout.inc(1) end),
         awful.button({}, 5, function() awful.layout.inc(-1) end)
     ))
 
@@ -186,6 +186,22 @@ awful.screen.connect_for_each_screen(function(s)
     s.mytaglist = awful.widget.taglist {
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
+        widget_template = {
+            {
+                {
+                    {
+                        id     = 'text_role',
+                        widget = wibox.widget.textbox,
+                    },
+                    layout = wibox.layout.fixed.horizontal,
+                },
+                left  = 9,
+                right = 9,
+                widget = wibox.container.margin
+            },
+            id     = 'background_role',
+            widget = wibox.container.background,
+        },
         buttons = taglist_buttons
     }
 
@@ -193,6 +209,7 @@ awful.screen.connect_for_each_screen(function(s)
     s.mytasklist = awful.widget.tasklist {
         screen  = s,
         filter  = awful.widget.tasklist.filter.currenttags,
+        buttons = tasklist_buttons,
         widget_template = {
             {
                 {
@@ -201,7 +218,7 @@ awful.screen.connect_for_each_screen(function(s)
                             id = 'icon_role',
                             widget = wibox.widget.imagebox,
                         },
-                        margins = 2,
+                        margins = 5,
                         widget = wibox.container.margin,
                     },
                     {
@@ -210,20 +227,18 @@ awful.screen.connect_for_each_screen(function(s)
                     },
                     layout = wibox.layout.fixed.horizontal,
                 },
-                left = 5,
-                right = 5,
+                left = 9,
+                right = 9,
                 widget = wibox.container.margin
             },
             id = 'background_role',
             widget = wibox.container.background
         },
-
-        buttons = tasklist_buttons
     }
 
     -- Create the wibox
     s.mywibox = awful.wibar({
-        position = "bottom",
+        position = "top",
         screen = s,
     })
 
@@ -480,7 +495,9 @@ awful.rules.rules = {
 
             class = {
                 "Arandr",
-                "zoom"
+                "zoom",
+                "Sxiv",
+                "mpv"
             },
 
             -- Note that the name property shown in xprop might be set slightly after creation of the client
@@ -508,18 +525,6 @@ awful.rules.rules = {
         },
         properties = {
             titlebars_enabled = true
-        }
-    },
-
-    {
-        rule_any = {
-            class = {
-                "Sxiv",
-                "mpv",
-            }
-        },
-        properties = {
-            titlebars_enabled = false
         }
     },
 
