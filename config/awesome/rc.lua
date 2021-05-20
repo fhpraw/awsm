@@ -22,6 +22,15 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
+-- Battery Widget
+local battery_widget = require("battery-widget")
+local mybatterytext = battery_widget {
+    ac_prefix = " AC: ",
+    battery_prefix = " Battery: ",
+    timeout = 60,
+    widget_font = "JetBrainsMono Nerd Font ExtraBold 9"
+} 
+
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -241,12 +250,12 @@ awful.screen.connect_for_each_screen(function(s)
 
     -- Create the wibox
     s.mywibox = awful.wibar({
-        position = "top",
+        position = "bottom",
         screen = s,
     })
 
     -- Add widgets to the wibox
-    s.mywibox:setup{
+    s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
@@ -258,6 +267,7 @@ awful.screen.connect_for_each_screen(function(s)
 
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            mybatterytext,
             wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
             mykeyboardlayout,
             mytextclock,
@@ -503,7 +513,6 @@ awful.rules.rules = {
                 "Arandr",
                 "zoom",
                 "Sxiv",
-                "mpv"
             },
 
             -- Note that the name property shown in xprop might be set slightly after creation of the client
@@ -520,17 +529,21 @@ awful.rules.rules = {
 
         },
 
-        properties = {floating = true}
+        properties = { floating = true }
 
     },
 
     -- Add titlebars to normal clients and dialogs
     {
-        rule_any = {
-            type = {"normal", "dialog"}
-        },
-        properties = {
-            titlebars_enabled = true
+        rule_any = { type = { "normal", "dialog" } },
+        properties = { titlebars_enabled = true }
+    },
+
+    { rule = { class = "mpv" },
+        properties = { 
+            titlebars_enabled = false,
+            floating = true,
+            ontop = true
         }
     },
 
