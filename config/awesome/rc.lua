@@ -27,6 +27,12 @@ local battery_widget = require("battery-widget")
 local mybatterytext = battery_widget {
     ac_prefix = " AC: ",
     battery_prefix = " Battery: ",
+    percent_colors = {
+        { 25, "#fb4934" },
+        { 50, "#fabd2f" },
+        { 75, "#b8bb26" },
+        { 100, "#83a598" }
+    },
     timeout = 60,
     widget_font = "JetBrainsMono Nerd Font ExtraBold 9"
 } 
