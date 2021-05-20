@@ -516,9 +516,7 @@ awful.rules.rules = {
             },
 
             class = {
-                "Arandr",
-                "zoom",
-                "Sxiv",
+                "Arandr"
             },
 
             -- Note that the name property shown in xprop might be set slightly after creation of the client
@@ -540,18 +538,22 @@ awful.rules.rules = {
     },
 
     -- Add titlebars to normal clients and dialogs
-    {
-        rule_any = { type = { "normal", "dialog" } },
+    { rule_any = { type = { "normal", "dialog" } },
         properties = { titlebars_enabled = true }
     },
 
-    { rule = { class = "mpv" },
-        properties = { 
-            titlebars_enabled = false,
-            floating = true,
-            ontop = true
-        }
+    -- Remove titlebars
+    { rule_any = { class = { "mpv", "Sxiv", "XTerm" } },
+        properties = { titlebars_enabled = false }
     },
+
+    { rule = { class = "zoom" },
+        properties = {
+            screen = 1,
+            tag = "9",
+            floating = true
+        }
+    }
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
