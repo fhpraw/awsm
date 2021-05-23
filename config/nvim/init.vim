@@ -1,8 +1,8 @@
-call plug#begin(stdpath('data') . '/plugged')
+call plug#begin( stdpath( 'data' ) . '/plugged' )
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-startify'
@@ -24,11 +24,10 @@ set autoindent
 set foldmethod=manual
 set noshowmode
 set noshowcmd
+set number
 
-silent! let g:gruvbox_italic=1
-silent! let g:gruvbox_contrast_dark='hard'
-silent! colorscheme gruvbox
-silent! let g:airline_powerline_fonts = 1
+silent! colorscheme dracula
+silent! let g:airline_powerline_fonts = 0
 silent! let g:airline#extensions#tabline#enabled = 1
 
 inoremap jk <esc>

@@ -185,7 +185,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({"1", "2", "3", "4", "5", "6", "7", "8", "9"}, s, awful.layout.layouts[1])
+    awful.tag({"1", "2", "3", "4"}, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -543,16 +543,8 @@ awful.rules.rules = {
     },
 
     -- Remove titlebars
-    { rule_any = { class = { "mpv", "Sxiv", "XTerm" } },
-        properties = { titlebars_enabled = false }
-    },
-
-    { rule = { class = "zoom" },
-        properties = {
-            screen = 1,
-            tag = "9",
-            floating = true
-        }
+    { rule_any = { class = { "mpv", "Sxiv", "zoom" } },
+        properties = { floating = true }
     }
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
