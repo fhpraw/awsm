@@ -23,7 +23,7 @@ mesa,opengl support
 noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra,google noto font
 ttf-liberation,free metric compatible substitute for MS Office font
 awesome,window manager
-xterm,terminal emulator
+kitty,the fast featureful GPU based terminal emulator
 firefox,web browser
 arandr,multidisplay manager
 libreoffice-fresh,office
