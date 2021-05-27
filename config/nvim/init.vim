@@ -1,4 +1,5 @@
 call plug#begin( stdpath( 'data' ) . '/plugged' )
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
@@ -27,7 +28,7 @@ set noshowcmd
 set number
 
 silent! colorscheme dracula
-silent! let g:airline_powerline_fonts = 0
+silent! let g:airline_powerline_fonts = 1
 silent! let g:airline#extensions#tabline#enabled = 1
 
 inoremap jk <esc>
