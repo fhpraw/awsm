@@ -10,36 +10,25 @@ sudo pacman -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs
 sudo systemctl enable tlp
 
 # set touchpad
-sudo mkdir -p /etc/X11/xorg.conf.d/
-sudo cp -v config/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo mkdir -v -p /etc/X11/xorg.conf.d/
+sudo cp -v xorg/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+
+# make directories
+mkdir -v -p ~/{Documents,Downloads,Drives,Images,Projects}
+mkdir -v -p ~/Images/{Wallpapers,Screenshots}/
+mkdir -v -p ~/.local/share/fonts/
+
+# copy all configs
+cp -v -r config ~/.config
+cp -v -r scripts ~/.scripts
+cp -v -r dots/{.xinitrc,.xprofile,.Xresources} ~/
+cat ~/.bashrc dots/.bashrc > ~/.bashrc
 
 # set font 
-mkdir -p ~/.local/share/fonts/
 curl -LJO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
 unzip JetBrainsMono.zip -d ~/.local/share/fonts/
 rm JetBrainsMono.zip
-mkdir -p ~/.config/fontconfig/
-cp -v config/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf
-
-# set X configs
-cp -v config/.xinitrc ~/.xinitrc
-
-# install kitty configs
-mkdir -p ~/.config/kitty
-cp -v config/kitty/kitty.conf ~/.config/kitty/kitty.conf
-
-# set bash configs
-cat ~/.bashrc config/.bashrc > ~/.bashrc
-cat ~/.bash_profile config/.bash_profile > ~/.bash_profile
 
 # install plugins for neovim
 curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-mkdir -p ~/.config/nvim/
-cp -v config/nvim/init.vim ~/.config/nvim/init.vim
 nvim +PlugInstall +qall
-
-# install awesome config
-cp -r -v config/awesome ~/.config/
-
-# make directories
-mkdir -p ~/Images/Screenshots/

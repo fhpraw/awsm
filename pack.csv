@@ -1,43 +1,41 @@
 PACKAGES,DESCRIPTION
-neovim,text editor
-git,git
 acpi,battery info
-tlp,TLP powermanagement
+arandr,multidisplay manager
+awesome,window manager
+bluez bluez-utils,bluetooth controller
+cmus,mp3 player
+code,text editor
+dosfstools,FAT file system support
+exfat-utils,EXFAT file system support
+ffmpeg,multimedia tool for video and audio
+firefox,web browser
+gimp,bitmap based image editor
+htop,system monitor
+imagemagick,simple image manipulation tools
+inkscape,vector based image editor
+kitty,the fast featureful GPU based terminal emulator
+libreoffice-still,office
+maim,screenshot tools
+man-db,manual page
+mesa,opengl support
+mpv,video player
+neofetch,system info
+noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra,google noto font
+ntfs-3g,NTFS file system support
 pulseaudio pulseaudio-alsa,audio system
 pulseaudio-bluetooth,bluetooth support for audio system
 pulsemixer,audio mixer for pulseaudio
-bluez bluez-utils,bluetooth controller
-ranger,file manager
-cmus,mp3 player
-unzip,extract zip
-unrar,extract rar
-youtube-dl,youtube downloader
-dosfstools,FAT file system support
-ntfs-3g,NTFS file system support
-exfat-utils,EXFAT file system support
-xorg-server,X server
-xorg-xinit,starter for X server
-xorg-xbacklight,brightness
-xf86-video-intel xf86-video-amdgpu,graphic driver
-mesa,opengl support
-noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra,google noto font
-ttf-liberation,free metric compatible substitute for MS Office font
-awesome,window manager
-kitty,the fast featureful GPU based terminal emulator
-firefox,web browser
-arandr,multidisplay manager
-libreoffice-fresh,office
-zathura zathura-pdf-mupdf,pdf reader
+ranger ueberzug,file manager
 sxiv,image viewer
-imagemagick,simple image manipulation tools
-inkscape,vector based image editor
-gimp,bitmap based image editor
-maim,screenshot tools
-xdotool,X automation tool
-ffmpeg,multimedia tool for video and audio
-mpv,video player
-xclip,clipboard
+tlp,TLP powermanagement
+unrar,extract rar
 virtualbox virtualbox-host-modules-arch virtualbox-guest-iso,virtual machine
-htop,system monitor
-neofetch,system info
-man-db,manual page
+xclip,clipboard
+xdotool,X automation tool
+xf86-video-intel xf86-video-amdgpu,graphic driver
+xorg-server,X server
+xorg-xbacklight,brightness
+xorg-xinit,starter for X server
+youtube-dl,youtube downloader
+zathura zathura-pdf-mupdf,pdf reader
+zip unzip,archive and extract zip
