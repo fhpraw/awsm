@@ -2,9 +2,10 @@ PACKAGES,DESCRIPTION
 acpi,battery info
 arandr,multidisplay manager
 awesome,window manager
+blender,video editor
 bluez bluez-utils,bluetooth controller
 cmus,mp3 player
-code,text editor
+code,text editor based on visual studio
 dosfstools,FAT file system support
 exfat-utils,EXFAT file system support
 ffmpeg,multimedia tool for video and audio
@@ -19,6 +20,7 @@ maim,screenshot tools
 man-db,manual page
 mesa,opengl support
 mpv,video player
+neovim,text editor based on vim
 neofetch,system info
 noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra,google noto font
 ntfs-3g,NTFS file system support

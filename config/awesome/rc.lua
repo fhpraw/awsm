@@ -76,7 +76,7 @@ end
 theme_config = "~/.config/awesome/themes/kuro/theme.lua"
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "kitty"
 editor = "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -104,7 +104,6 @@ beautiful.init(theme_config)
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
@@ -119,7 +118,8 @@ awful.layout.layouts = {
     awful.layout.suit.corner.nw,
     awful.layout.suit.corner.ne,
     awful.layout.suit.corner.sw,
-    awful.layout.suit.corner.se
+    awful.layout.suit.corner.se,
+    awful.layout.suit.floating
 }
 -- }}}
 
@@ -618,6 +618,6 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- rounded corner
--- client.connect_signal("manage", function(c) c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 10) end end)
+client.connect_signal("manage", function(c) c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 5) end end)
 
 -- }}}
