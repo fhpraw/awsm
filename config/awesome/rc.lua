@@ -618,6 +618,6 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- rounded corner
-client.connect_signal("manage", function(c) c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 5) end end)
+-- client.connect_signal("manage", function(c) c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 5) end end)
 
 -- }}}
