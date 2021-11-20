@@ -2,15 +2,12 @@ PACKAGES,DESCRIPTION
 acpi,battery info
 arandr,multidisplay manager
 awesome,window manager
-blender,video editor
 bluez bluez-utils,bluetooth controller
 cmus,mp3 player
-code,text editor based on visual studio
 dosfstools,FAT file system support
 exfat-utils,EXFAT file system support
 ffmpeg,multimedia tool for video and audio
 firefox,web browser
-gimp,bitmap based image editor
 htop,system monitor
 imagemagick,simple image manipulation tools
 inkscape,vector based image editor
@@ -27,11 +24,10 @@ ntfs-3g,NTFS file system support
 pulseaudio pulseaudio-alsa,audio system
 pulseaudio-bluetooth,bluetooth support for audio system
 pulsemixer,audio mixer for pulseaudio
-ranger ueberzug,file manager
+ranger ueberzug udisks2,file manager with preview and mount drive support
 sxiv,image viewer
 tlp,TLP powermanagement
 unrar,extract rar
-virtualbox virtualbox-host-modules-arch virtualbox-guest-iso,virtual machine
 xclip,clipboard
 xdotool,X automation tool
 xf86-video-intel xf86-video-amdgpu,graphic driver
