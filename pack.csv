@@ -18,6 +18,7 @@ noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra,google noto font
 pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulsemixer,audio system with bluetooth support and mixer
 ranger ueberzug udisks2,a vim inspired file manager with preview and mount drive support
 sxiv,image viewer
+tldr,collaborative cheatsheets for console commands
 tlp,TLP power management
 unrar,extract rar
 xclip,clipboard
