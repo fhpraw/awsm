@@ -7,6 +7,7 @@ dosfstools ntfs-3g exfat-utils,FAT NTFS EXFAT file system support
 ffmpeg,a complete cross-platform solution to record convert and stream audio and video
 firefox,web browser
 gimp,gnu image manipulation program
+git,git
 imagemagick,create edit compose or convert digital images
 inkscape,professional quality vector graphics software
 kitty,the fast featureful GPU based terminal emulator
@@ -21,6 +22,7 @@ sxiv,image viewer
 tldr,collaborative cheatsheets for console commands
 tlp,TLP power management
 unrar,extract rar
+virtualbox virtualbox-host-modules-arch virtualbox-guest-iso,virtual machine
 xclip,clipboard
 xf86-video-intel xf86-video-amdgpu mesa,graphic driver with opengl support
 xorg-server xorg-xinit,X server with xinit
