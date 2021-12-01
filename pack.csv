@@ -35,7 +35,7 @@ virtualbox virtualbox-host-modules-arch,a powerful x86 and AMD64 Intel64 virtual
 virtualbox-guest-iso,Virtualbox Guest ISO
 xclip,clipboard
 xf86-video-intel,graphic driver for intel
-xf86-video-amd,graphic driver for AMD
+xf86-video-amdgpu,graphic driver for AMD
 mesa,OpenGL support
 xorg-server,X server
 xorg-xinit,used to start the X Window System server
