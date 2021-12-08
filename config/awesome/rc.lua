@@ -26,7 +26,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 local battery_widget = require("battery-widget")
 local mybatterytext = battery_widget {
     ac_prefix = " AC: ",
-    battery_prefix = " Battery: ",
+    battery_prefix = " BAT: ",
     percent_colors = {
         { 25, "#fb4934" },
         { 50, "#fabd2f" },
@@ -104,22 +104,22 @@ beautiful.init(theme_config)
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
+    awful.layout.suit.max,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
     awful.layout.suit.corner.nw,
     awful.layout.suit.corner.ne,
     awful.layout.suit.corner.sw,
     awful.layout.suit.corner.se,
-    awful.layout.suit.floating
+    awful.layout.suit.fair,
+    awful.layout.suit.fair.horizontal,
+    awful.layout.suit.max.fullscreen,
+    awful.layout.suit.magnifier,
+    --awful.layout.suit.floating,
+    --awful.layout.suit.spiral,
+    --awful.layout.suit.spiral.dwindle
 }
 -- }}}
 
@@ -618,6 +618,6 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- rounded corner
-client.connect_signal("manage", function(c) c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 5) end end)
+-- client.connect_signal("manage", function(c) c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 5) end end)
 
 -- }}}

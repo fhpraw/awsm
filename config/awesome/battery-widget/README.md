@@ -168,4 +168,3 @@ battery_widget {
 
 * [awesome 4.0](http://awesome.naquadah.org/). May work on 3.5 with minor changes.
 * `acpid` (optional)
-
