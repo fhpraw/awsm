@@ -3,7 +3,6 @@ acpi,battery info
 arandr,multidisplay manager
 awesome,highly configurable next generation framework window manager for X
 bluez bluez-utils,bluetooth manager
-code,visual studio code OSS version
 dosfstools,FAT32 file system support
 exfat-utils,EXFAT file system support
 ffmpeg,a complete cross-platform solution to record convert and stream audio and video
