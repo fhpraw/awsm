@@ -90,7 +90,7 @@ screenshot_selected = "maim -u -s -o " .. screenshot_dir
 setwallpaper = "sxiv -r -t -o ~/Images/Wallpapers/ | xargs -I{} cp {} ~/.config/awesome/themes/kuro/background.jpg && pkill -HUP awesome"
 
 -- set default browser
--- browser = "firefox"
+browser = "firefox"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -304,7 +304,7 @@ globalkeys = gears.table.join(
 
     awful.key({}, "XF86Display", function() awful.spawn("arandr") end),
     awful.key({}, "XF86Tools", function() awful.spawn(terminal .. " -e nvim") end),
-    -- awful.key({}, "XF86Search", function() awful.spawn(browser) end),
+    awful.key({}, "XF86Search", function() awful.spawn(browser) end),
     awful.key({}, "XF86LaunchA", function() menubar.show() end),
     awful.key({}, "XF86Explorer", function() awful.spawn(terminal .. " -e ranger") end),
 
