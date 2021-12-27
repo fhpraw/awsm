@@ -27,7 +27,6 @@ set autoindent
 set foldmethod=manual
 set noshowmode
 set noshowcmd
-set number
 
 " Gruvbox
 silent! colorscheme gruvbox
@@ -35,7 +34,6 @@ silent! let g:gruvbox_contrast_dark = 'hard'
 
 " Airline
 silent! let g:airline_powerline_fonts = 1
-silent! let g:airline#extensions#tabline#enabled = 1
 
 " Keybindings
 " ---------------------------------------------------

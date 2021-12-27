@@ -21,8 +21,7 @@ mkdir -v -p ~/.scripts
 
 # copy all configs
 cp -v -r config ~/.config
-cp -v -r dots/{.xinitrc,.xprofile,.bash_profile} ~/
-cat ~/.bashrc dots/.bashrc > ~/.bashrc
+cp -v -r dots/{.xinitrc,.xprofile,.bashrc,.bash_profile} ~/
 
 # set font 
 curl -LJO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip

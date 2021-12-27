@@ -6,20 +6,26 @@
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
--- Standard awesome library
+-- utilities such as color parsing and objects
 local gears = require("gears")
+
+-- everything related to window management
 local awful = require("awful")
+
 require("awful.autofocus")
 
--- Widget and layout library
+-- awesome own generic widget framework
 local wibox = require("wibox")
 
--- Theme handling library
+-- awesome theme module
 local beautiful = require("beautiful")
 
--- Notification library
+-- Notifications
 local naughty = require("naughty")
+
+-- XDG (application) menu implementation
 local menubar = require("menubar")
+
 local hotkeys_popup = require("awful.hotkeys_popup")
 
 -- Battery Widget
@@ -45,11 +51,9 @@ require("awful.hotkeys_popup.keys")
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
 if awesome.startup_errors then
-    naughty.notify({
-        preset = naughty.config.presets.critical,
-        title = "Oops, there were errors during startup!",
-        text = awesome.startup_errors
-    })
+    naughty.notify({ preset = naughty.config.presets.critical,
+                     title = "Oops, there were errors during startup!",
+                     text = awesome.startup_errors })
 end
 
 -- Handle runtime errors after startup
@@ -104,24 +108,42 @@ beautiful.init(theme_config)
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.max,
+    awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
+    awful.layout.suit.fair,
+    awful.layout.suit.fair.horizontal,
+    awful.layout.suit.spiral,
+    awful.layout.suit.spiral.dwindle,
+    awful.layout.suit.max,
+    awful.layout.suit.max.fullscreen,
+    awful.layout.suit.magnifier,
     awful.layout.suit.corner.nw,
     awful.layout.suit.corner.ne,
     awful.layout.suit.corner.sw,
     awful.layout.suit.corner.se,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
-    --awful.layout.suit.floating,
-    --awful.layout.suit.spiral,
-    --awful.layout.suit.spiral.dwindle
 }
 -- }}}
+
+myawesomemenu = {
+    { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
+    { "manual", terminal .. " -e man awesome" },
+    { "edit config", editor_cmd .. " " .. awesome.conffile },
+    { "restart", awesome.restart },
+    { "quit", function() awesome.quit() end }
+}
+
+mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
+                                    { "open terminal", terminal }
+                                  }
+                        })
+
+mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
+                                     menu = mymainmenu })
+
+menubar.utils.terminal = terminal
 
 -- Keyboard map indicator and switcher
 mykeyboardlayout = awful.widget.keyboardlayout()
@@ -185,7 +207,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({"1","2","3"}, s, awful.layout.layouts[1])
+    awful.tag({"1","2","3","4","5","6","7","8","9"}, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -265,6 +287,8 @@ awful.screen.connect_for_each_screen(function(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
+            --wibox.layout.margin(mylauncher, 3, 3, 3, 3),
+            mylauncher,
             s.mytaglist,
             s.mypromptbox,
         },
@@ -274,10 +298,10 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             mybatterytext,
-            wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
+            wibox.layout.margin(wibox.widget.systray(), 3, 3, 3, 3),
             mykeyboardlayout,
             mytextclock,
-            wibox.layout.margin(s.mylayoutbox, 5, 5, 5, 5)
+            wibox.layout.margin(s.mylayoutbox, 3, 3, 3, 3)
         },
     }
 end)
@@ -511,7 +535,7 @@ awful.rules.rules = {
         rule_any = {
 
             instance = {
-                -- "DTA",  -- Firefox addon DownThemAll.
+                "DTA",  -- Firefox addon DownThemAll.
                 -- "pinentry",
             },
 
@@ -537,14 +561,20 @@ awful.rules.rules = {
 
     },
 
-    -- Add titlebars to normal clients and dialogs
     { rule_any = { type = { "normal", "dialog" } },
         properties = { titlebars_enabled = true }
     },
 
-    -- Remove titlebars
-    { rule_any = { class = { "mpv", "Sxiv", "zoom" } },
-        properties = { floating = true }
+    -- { rule_any = { class = { "kitty" } },
+    --     properties = { titlebars_enabled = false, border_width = 1 }
+    -- },
+
+    -- { rule_any = { class = { "mpv", "Sxiv" } },
+    --     properties = { titlebars_enabled = false }
+    -- },
+
+    { rule_any = { class = { "zoom" } },
+        properties = { floating = true, titlebars_enabled = true, screen = 1, tag = "9" }
     }
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
@@ -618,6 +648,6 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- rounded corner
--- client.connect_signal("manage", function(c) c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 5) end end)
+--client.connect_signal("manage", function(c) c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 3) end end)
 
 -- }}}
