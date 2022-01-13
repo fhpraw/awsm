@@ -11,7 +11,7 @@ local themes_path   = "~/.config/awesome/themes/kuro/"
 
 local theme         = {}
 
-theme.font          = "JetBrainsMono Nerd Font ExtraBold 9"
+theme.font          = "JetBrainsMono ExtraBold 9"
 
 theme.bg_normal     = "#282a36"
 theme.bg_focus      = "#44475a"

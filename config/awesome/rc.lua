@@ -40,7 +40,7 @@ local mybatterytext = battery_widget {
         { 100, "#83a598" }
     },
     timeout = 60,
-    widget_font = "JetBrainsMono Nerd Font ExtraBold 9"
+    widget_font = "JetBrainsMono ExtraBold 9"
 } 
 
 -- Enable hotkeys help widget for VIM and other apps
