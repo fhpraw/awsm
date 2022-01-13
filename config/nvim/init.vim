@@ -15,7 +15,6 @@ call plug#end()
 set path+=**
 set wildmenu
 set termguicolors
-set background=dark
 set cursorline
 set incsearch
 set hlsearch
@@ -27,8 +26,10 @@ set autoindent
 set foldmethod=manual
 set noshowmode
 set noshowcmd
+set number
 
 " Gruvbox
+set background=dark
 silent! colorscheme gruvbox
 silent! let g:gruvbox_contrast_dark = 'hard'
 
