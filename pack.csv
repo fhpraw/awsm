@@ -1,8 +1,5 @@
 PACKAGES,DESCRIPTION
 acpi,client for battery power and thermal readings
-adobe-source-code-pro-fonts,Monospaced font family for user interface and coding environments
-adobe-source-sans-fonts,Sans serif font family for user interface environments
-adobe-source-serif-fonts,Serif typeface designed to complement Source Sans
 atool,A script for managing file archives of various types
 arandr,Provide a simple visual front end for XRandR
 awesome,highly configurable next generation framework window manager for X
@@ -41,11 +38,6 @@ slock,simple X display locker
 sxiv,Simple X Image Viewer
 tlp,Linux Advanced Power Management
 tldr,Command line client for tldr a collection of simplified and community driven man pages
-ttf-caladea,A serif font family metric-compatible with Cambria font family
-ttf-carlito,Google Carlito font
-ttf-dejavu,Font family based on the Bitstream Vera Fonts with a wider range of characters
-ttf-liberation,Font family which aims at metric compatibility with Arial Times New Roman and Courier New
-ttf-linux-libertine-g,Graphite port of Linux Libertine and Linux Biolinum fonts
 ttf-jetbrains-mono,Typeface for developers by JetBrains
 ttf-nerd-fonts-symbols,High number of extra glyphs from popular iconic fonts 2048em
 unrar,archive and extract zip and extract rar
