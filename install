@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install all packages in pack.csv
-paru -Syyu --noconfirm && paru -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs)
+sudo pacman -Syyu --noconfirm && paru -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs)
 
 # enable TLP
 sudo systemctl enable tlp
@@ -10,13 +10,11 @@ sudo systemctl enable tlp
 sudo mkdir -v -p /etc/X11/xorg.conf.d/ && sudo cp -v xorg/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 # make directories
-mkdir -v -p ~/{Documents,Downloads,Images,Projects,Videos,Audios}
 mkdir -v -p ~/Images/Screenshots/
 
 # copy all configs
 cp -v -r config ~/.config
 cp -v -r dots/{.xinitrc,.xprofile,.bashrc,.bash_profile} ~/
-cp -v -r Wallpapers ~/Images/Wallpapers
 
 # install plugins for neovim
 curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && nvim +PlugInstall +qall

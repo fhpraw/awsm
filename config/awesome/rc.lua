@@ -94,7 +94,7 @@ screenshot_selected = "maim -u -s -o " .. screenshot_dir
 setwallpaper = "sxiv -r -t -o ~/Images/Wallpapers/ | xargs -I{} cp {} ~/.config/awesome/themes/kuro/background.jpg && pkill -HUP awesome"
 
 -- set default browser
-browser = "google-chrome-stable"
+browser = "firefox"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
