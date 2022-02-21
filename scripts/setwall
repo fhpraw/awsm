@@ -1,0 +1,2 @@
+#!/bin/bash
+sxiv -r -t -o ~/Images/Wallpapers/ | xargs -I{} cp {} ~/.config/wallpaper.jpg && pkill -HUP awesome
