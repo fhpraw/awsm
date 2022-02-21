@@ -2,7 +2,7 @@
 [[ $- != *i* ]] && return
 PS1='[\u@\h \W]\$ '
 set -o vi
-export EDITOR=nvim
-export VISUAL=nvim
 alias ls='ls --color=auto'
-
+alias ca='nvim ~/.config/awesome/rc.lua'
+alias ck='nvim ~/.config/kitty/kitty.conf'
+alias cb='nvim ~/.bashrc'
