@@ -5,21 +5,14 @@ awesome,highly configurable next generation framework window manager for X
 bluez,daemons for the bluetooth protocol stack
 bluez-utils,Development and debugging utilities for the bluetooth protocol stack
 cmus,Feature rich ncurses based music player
-curl,An URL retrieval utility and library
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
-ffmpeg,Complete solution to record convert and stream audio and video
-firefox,Standalone web browser from mozilla.org
-git,the fast distributed version control system
 htop,Interactive process viewer
-imagemagick,An image viewing manipulation program
 kitty,A modern hackable featureful OpenGL based terminal emulator
 maim,Utility to take a screenshot using imlib2
 man-db,A utility for reading man pages
 mesa,An open source implementation of the OpenGL specification
 mpv,a free open source and cross platform media player
-neofetch,a CLI system information tool written in BASH that supports displaying images
-neovim,Fork of Vim aiming to improve user experience plugins and GUIs
 noto-fonts,Google Noto TTF fonts
 noto-fonts-cjk,Google Noto CJK fonts
 noto-fonts-emoji,Google Noto emoji fonts
@@ -33,7 +26,6 @@ ranger,simple vim-like file manager
 slock,simple X display locker
 sxiv,Simple X Image Viewer
 tlp,Linux Advanced Power Management
-tldr,Command line client for tldr a collection of simplified and community driven man pages
 ttf-jetbrains-mono,Typeface for developers by JetBrains
 ttf-nerd-fonts-symbols,High number of extra glyphs from popular iconic fonts 2048em
 unrar,archive and extract zip and extract rar
