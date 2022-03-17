@@ -12,8 +12,11 @@ pulseaudio-bluetooth,Bluetooth support for PulseAudio
 pulsemixer,CLI and curses mixer for pulseaudio
 acpi,client for battery power and thermal readings
 htop,Interactive process viewer
+git,source code version control
+neovim,editor
 ranger,simple vim-like file manager
 tlp,Linux Advanced Power Management
+tmux,terminal multiplexer
 wget,network utilities to retrieve files from web
 unrar,archive and extract zip and extract rar
 unzip,For extracting and viewing files in zip archives
