@@ -1,45 +1,56 @@
 PACKAGES,DESCRIPTION
-acpi,client for battery power and thermal readings
-arandr,Provide a simple visual front end for XRandR
-awesome,highly configurable next generation framework window manager for X
-bluez,daemons for the bluetooth protocol stack
-bluez-utils,Development and debugging utilities for the bluetooth protocol stack
-cmus,Feature rich ncurses based music player
+man-db,A utility for reading man pages
+tealdeer,A fast tldr client in Rust
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
-htop,Interactive process viewer
-kitty,A modern hackable featureful OpenGL based terminal emulator
-libreoffice-fresh,LibreOffice branch which contains new features and program enhancements 
-maim,Utility to take a screenshot using imlib2
-man-db,A utility for reading man pages
-mesa,An open source implementation of the OpenGL specification
-mpv,a free open source and cross platform media player
-noto-fonts,Google Noto TTF fonts
-noto-fonts-cjk,Google Noto CJK fonts
-noto-fonts-emoji,Google Noto emoji fonts
-noto-fonts-extra,Google Noto TTF fonts additional variants
 ntfs-3g,NTFS filesystem driver and utilities
+bluez,daemons for the bluetooth protocol stack
+bluez-utils,Development and debugging utilities for the bluetooth protocol stack
 pulseaudio,A featureful general purpose sound server
 pulseaudio-alsa,ALSA Configuration for PulseAudio
 pulseaudio-bluetooth,Bluetooth support for PulseAudio
 pulsemixer,CLI and curses mixer for pulseaudio
+acpi,client for battery power and thermal readings
+htop,Interactive process viewer
 ranger,simple vim-like file manager
-slock,simple X display locker
-sxiv,Simple X Image Viewer
 tlp,Linux Advanced Power Management
-tealdeer,A fast tldr client in Rust
-ttf-jetbrains-mono,Typeface for developers by JetBrains
-ttf-nerd-fonts-symbols,High number of extra glyphs from popular iconic fonts 2048em
+wget,network utilities to retrieve files from web
 unrar,archive and extract zip and extract rar
 unzip,For extracting and viewing files in zip archives
-xclip,Command line interface to the X11 clipboard
-xdotool,Command line X11 automation tool
+zip,Compressor archiver for creating and modifying zipfiles
+cmus,Feature rich ncurses based music player
+ffmpeg,Complete solution to record convert and stream audio and video 
+arandr,Provide a simple visual front end for XRandR
+awesome,highly configurable next generation framework window manager for X
+kitty,A modern hackable featureful OpenGL based terminal emulator
+mesa,An open source implementation of the OpenGL specification
+slock,simple X display locker
 xf86-video-amdgpu,Xorg amdgpu video driver
 xf86-video-intel,Xorg Intel video drivers 
 xorg-server,Xorg X server
 xorg-xbacklight,RandR-based backlight control application
 xorg-xinit,Xorg initialisation program
+imagemagick,an image viewing and manipulating program
+maim,Utility to take a screenshot using imlib2
+mpv,a free open source and cross platform media player
+sxiv,Simple X Image Viewer
+xclip,Command line interface to the X11 clipboard
+xdotool,Command line X11 automation tool
 yt-dlp,A youtube-dl fork with additional features and fixes
 zathura,Minimalistic document viewer
 zathura-pdf-mupdf,PDF support for Zathura MuPDF backend support PDF ePub and OpenXPS
-zip,Compressor archiver for creating and modifying zipfiles
+noto-fonts,Google Noto TTF fonts
+noto-fonts-cjk,Google Noto CJK fonts
+noto-fonts-emoji,Google Noto emoji fonts
+noto-fonts-extra,Google Noto TTF fonts additional variants
+ttf-jetbrains-mono,Typeface for developers by JetBrains
+ttf-nerd-fonts-symbols,High number of extra glyphs from popular iconic fonts 2048em
+blender,A fully integrated 3D graphics creation suite
+gimp,GNU Image Manipulation Program
+inkscape,profesional graphic vector editor
+libreoffice-fresh,LibreOffice branch which contains new features and program enhancements 
+obs-studio,Free open source software for live streaming and recording
+v4l2loopback-dkms,v4l2loopback device module sources
+virtualbox,Powerful x86 virtualization for enterprise as well as home use
+virtualbox-host-modules-arch,virtualbox host kernel modules for arch kernel
+virtualbox-guest-iso,The official virtualbox guest additions iso image
