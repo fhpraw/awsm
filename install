@@ -14,7 +14,7 @@ mkdir -v -p ~/Images/Screenshots/
 
 # copy all configs
 cp -v -r config ~/.config
-cp -v -r dots/{.xinitrc,.xprofile,.bashrc,.bash_profile} ~/
+cp -v -r dots/{.xinitrc,.bashrc} ~/
 cp -v -r scripts ~/.scripts
 
 # copy wallpaper
