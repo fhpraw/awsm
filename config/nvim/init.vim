@@ -1,7 +1,7 @@
 " Plugins
 call plug#begin( stdpath( 'data' ) . '/plugged' )
-Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
+Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'

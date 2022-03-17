@@ -43,6 +43,22 @@ do
 end
 -- }}}
 
+-- Battery Widget
+local battery_widget = require("battery-widget")
+local BAT0 = battery_widget {
+    ac = "AC",
+    adapter = "BAT0",
+    ac_prefix = "AC:",
+    battery_prefix = "BAT:",
+    timeout = 60,
+    widget_font = "JetBrainsMono Bold 9",
+    percent_colors = {
+        { 25, "#fb4934" },
+        { 50, "#fe8019" },
+        { 999, "#b8bb26" }
+    }
+}
+
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("~/.config/awesome/themes/gruv/theme.lua")
@@ -236,14 +252,14 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "bottom", screen = s })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            --mylauncher,
+            wibox.layout.margin(mylauncher, 5, 5, 5, 5),
             s.mytaglist,
             s.mypromptbox,
         },
@@ -251,9 +267,10 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
-            wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
+            BAT0,
             mytextclock,
-            wibox.layout.margin(s.mylayoutbox, 5, 5, 5, 5),
+            wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
+            wibox.layout.margin(s.mylayoutbox, 5, 5, 5, 5)
         },
     }
 end)
@@ -387,7 +404,7 @@ globalkeys = gears.table.join(
 
     awful.key({}, "XF86Display", function() awful.spawn("arandr") end),
     awful.key({}, "XF86Tools", function() awful.spawn(terminal) end),
-    awful.key({}, "XF86Search", function() awful.spawn("firefox") end),
+    awful.key({}, "XF86Search", function() awful.spawn("google-chrome-stable") end),
     awful.key({}, "XF86LaunchA", function() menubar.show() end),
     awful.key({}, "XF86Explorer", function() awful.spawn(terminal .. " -e ranger") end)
 
