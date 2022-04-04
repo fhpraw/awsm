@@ -48,12 +48,3 @@ noto-fonts-emoji,Google Noto emoji fonts
 noto-fonts-extra,Google Noto TTF fonts additional variants
 ttf-jetbrains-mono,Typeface for developers by JetBrains
 ttf-nerd-fonts-symbols,High number of extra glyphs from popular iconic fonts 2048em
-blender,A fully integrated 3D graphics creation suite
-gimp,GNU Image Manipulation Program
-inkscape,profesional graphic vector editor
-libreoffice-fresh,LibreOffice branch which contains new features and program enhancements 
-obs-studio,Free open source software for live streaming and recording
-v4l2loopback-dkms,v4l2loopback device module sources
-virtualbox,Powerful x86 virtualization for enterprise as well as home use
-virtualbox-host-modules-arch,virtualbox host kernel modules for arch kernel
-virtualbox-guest-iso,The official virtualbox guest additions iso image
