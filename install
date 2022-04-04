@@ -6,10 +6,10 @@ sudo pacman -Syyu --noconfirm && sudo pacman -S --noconfirm $(sed '1d' pack.csv 
 # enable TLP
 sudo systemctl enable tlp
 
-# set touchpad
+# enable touchpad
 sudo mkdir -v -p /etc/X11/xorg.conf.d/ && sudo cp -v xorg/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
-# make directories
+# make some directories
 mkdir -v -p ~/Images/Screenshots/
 
 # copy all configs
