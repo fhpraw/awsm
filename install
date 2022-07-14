@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # install all packages in pack.csv
-paru -Syyu --noconfirm || exit 1
-paru -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs) || exit 1
+sudo pacman -Syyu --noconfirm || exit 1
+sudo pacman -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs) || exit 1
 
 # enable TLP
 sudo systemctl enable tlp
