@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # install all packages in pack.csv
-paru -Syyu --noconfirm && paru -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs)
+paru -Syyu --noconfirm || exit 1
+paru -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs) || exit 1
 
 # enable TLP
 sudo systemctl enable tlp
@@ -14,7 +15,7 @@ mkdir -v -p ~/Images/Screenshots/
 
 # copy all configs
 cp -v -r config ~/.config
-cp -v -r dots/{.xinitrc,.bashrc} ~/
+cp -v -r dots/.xinitrc ~/
 cp -v -r scripts ~/.scripts
 
 # copy wallpaper
