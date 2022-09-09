@@ -1,45 +1,45 @@
 PACKAGES,DESCRIPTION
-man-db,A utility for reading man pages
-dosfstools,DOS filesystem utilities
-exfat-utils,Utilities for exFAT file system
-ntfs-3g,NTFS filesystem driver and utilities
+acpi,client for battery power and thermal readings
+arandr,Provide a simple visual front end for XRandR
+awesome,highly configurable next generation framework window manager for X
 bluez,daemons for the bluetooth protocol stack
 bluez-utils,Development and debugging utilities for the bluetooth protocol stack
+cmus,Feature rich ncurses based music player
+dosfstools,DOS filesystem utilities
+exfat-utils,Utilities for exFAT file system
+gimp,GNU Image Manipulation Program
+git,source code version control
+inkscape,Professional vector graphics editor
+kitty,A modern hackable featureful OpenGL based terminal emulator
+libreoffice-fresh,LibreOffice branch which contains new features and program enhancements
+maim,Utility to take a screenshot using imlib2
+man-db,A utility for reading man pages
+mesa,An open source implementation of the OpenGL specification
+mpv,a free open source and cross platform media player
+neovim,editor
+noto-fonts,Google Noto TTF fonts
+noto-fonts-cjk,Google Noto CJK fonts
+noto-fonts-emoji,Google Noto emoji fonts
+noto-fonts-extra,Google Noto TTF fonts additional variants
+ntfs-3g,NTFS filesystem driver and utilities
 pulseaudio,A featureful general purpose sound server
 pulseaudio-alsa,ALSA Configuration for PulseAudio
 pulseaudio-bluetooth,Bluetooth support for PulseAudio
 pulsemixer,CLI and curses mixer for pulseaudio
-acpi,client for battery power and thermal readings
-git,source code version control
-neovim,editor
 ranger,simple vim-like file manager
+sxiv,Simple X Image Viewer
 tlp,Linux Advanced Power Management
+ttf-jetbrains-mono,Typeface for developers by JetBrains
+ttf-nerd-fonts-symbols-2048-em-mono,High number of extra glyphs from popular iconic fonts 2048em
 unrar,archive and extract zip and extract rar
 unzip,For extracting and viewing files in zip archives
-zip,Compressor archiver for creating and modifying zipfiles
-cmus,Feature rich ncurses based music player
-arandr,Provide a simple visual front end for XRandR
-awesome,highly configurable next generation framework window manager for X
-kitty,A modern hackable featureful OpenGL based terminal emulator
-mesa,An open source implementation of the OpenGL specification
+xclip,Command line interface to the X11 clipboard
+xdotool,Command line X11 automation tool
 xf86-video-amdgpu,Xorg amdgpu video driver
 xf86-video-intel,Xorg Intel video drivers 
 xorg-server,Xorg X server
 xorg-xbacklight,RandR-based backlight control application
 xorg-xinit,Xorg initialisation program
-maim,Utility to take a screenshot using imlib2
-mpv,a free open source and cross platform media player
-sxiv,Simple X Image Viewer
-xclip,Command line interface to the X11 clipboard
-xdotool,Command line X11 automation tool
 zathura,Minimalistic document viewer
 zathura-pdf-mupdf,PDF support for Zathura MuPDF backend support PDF ePub and OpenXPS
-noto-fonts,Google Noto TTF fonts
-noto-fonts-cjk,Google Noto CJK fonts
-noto-fonts-emoji,Google Noto emoji fonts
-noto-fonts-extra,Google Noto TTF fonts additional variants
-ttf-jetbrains-mono,Typeface for developers by JetBrains
-ttf-nerd-fonts-symbols-2048-em-mono,High number of extra glyphs from popular iconic fonts 2048em
-inkscape,Professional vector graphics editor
-gimp,GNU Image Manipulation Program
-libreoffice-fresh,LibreOffice branch which contains new features and program enhancements
+zip,Compressor archiver for creating and modifying zipfiles
