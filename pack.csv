@@ -39,4 +39,7 @@ noto-fonts-cjk,Google Noto CJK fonts
 noto-fonts-emoji,Google Noto emoji fonts
 noto-fonts-extra,Google Noto TTF fonts additional variants
 ttf-jetbrains-mono,Typeface for developers by JetBrains
-ttf-nerd-fonts-symbols,High number of extra glyphs from popular iconic fonts 2048em
+ttf-nerd-fonts-symbols-2048-em-mono,High number of extra glyphs from popular iconic fonts 2048em
+inkscape,Professional vector graphics editor
+gimp,GNU Image Manipulation Program
+libreoffice-fresh,LibreOffice branch which contains new features and program enhancements
