@@ -6,6 +6,7 @@ sudo pacman -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs
 
 # enable TLP
 sudo systemctl enable tlp
+sudo systemctl enable bluetooth.service
 
 # enable touchpad
 sudo mkdir -v -p /etc/X11/xorg.conf.d/ && sudo cp -v xorg/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
