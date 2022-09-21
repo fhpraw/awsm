@@ -4,6 +4,7 @@ arandr,Provide a simple visual front end for XRandR
 awesome,highly configurable next generation framework window manager for X
 bluez,daemons for the bluetooth protocol stack
 bluez-utils,Development and debugging utilities for the bluetooth protocol stack
+blueman,full featured bluetooth manager
 cmus,Feature rich ncurses based music player
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
@@ -17,6 +18,7 @@ man-db,A utility for reading man pages
 mesa,An open source implementation of the OpenGL specification
 mpv,a free open source and cross platform media player
 neovim,editor
+network-manager-applet,GUI interface network manager
 noto-fonts,Google Noto TTF fonts
 noto-fonts-cjk,Google Noto CJK fonts
 noto-fonts-emoji,Google Noto emoji fonts
