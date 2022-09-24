@@ -6,6 +6,9 @@ bluez,daemons for the bluetooth protocol stack
 bluez-utils,Development and debugging utilities for the bluetooth protocol stack
 blueman,full featured bluetooth manager
 cmus,Feature rich ncurses based music player
+cups,CUPS
+cups-filters,CUPS filters
+cups-pdf,CUPS PDF
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
 gimp,GNU Image Manipulation Program
