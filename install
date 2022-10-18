@@ -2,7 +2,7 @@
 
 # install all packages in pack.csv
 sudo pacman -Syyu --noconfirm || exit 1
-sudo pacman -S --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs) || exit 1
+sudo pacman -S --needed --noconfirm $(sed '1d' pack.csv | awk -F "," '{print $1}' | xargs) || exit 1
 
 # enable services
 sudo systemctl enable tlp.service
