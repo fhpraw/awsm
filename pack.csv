@@ -12,12 +12,9 @@ cups-pdf,CUPS PDF
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
 ffmpeg,Complete solution to record convert and stream audio and video
-gimp,GNU Image Manipulation Program
 git,source code version control
 imagemagick,An image viewing/manipulation program
-inkscape,Professional vector graphics editor
 kitty,A modern hackable featureful OpenGL based terminal emulator
-libreoffice-fresh,LibreOffice branch which contains new features and program enhancements
 maim,Utility to take a screenshot using imlib2
 man-db,A utility for reading man pages
 mesa,An open source implementation of the OpenGL specification
