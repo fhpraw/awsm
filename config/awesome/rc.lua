@@ -65,6 +65,7 @@ beautiful.init("~/.config/awesome/themes/gruv/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
+browser = "firefox"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -404,7 +405,7 @@ globalkeys = gears.table.join(
 
     awful.key({}, "XF86Display", function() awful.spawn("arandr") end),
     awful.key({}, "XF86Tools", function() awful.spawn(terminal) end),
-    awful.key({}, "XF86Search", function() awful.spawn("firefox") end),
+    awful.key({}, "XF86Search", function() awful.spawn(browser) end),
     awful.key({}, "XF86LaunchA", function() menubar.show() end),
     awful.key({}, "XF86Explorer", function() awful.spawn(terminal .. " -e ranger") end)
 
