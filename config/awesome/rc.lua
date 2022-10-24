@@ -404,7 +404,7 @@ globalkeys = gears.table.join(
 
     awful.key({}, "XF86Display", function() awful.spawn("arandr") end),
     awful.key({}, "XF86Tools", function() awful.spawn(terminal) end),
-    awful.key({}, "XF86Search", function() awful.spawn("google-chrome-stable") end),
+    awful.key({}, "XF86Search", function() awful.spawn("firefox") end),
     awful.key({}, "XF86LaunchA", function() menubar.show() end),
     awful.key({}, "XF86Explorer", function() awful.spawn(terminal .. " -e ranger") end)
 
