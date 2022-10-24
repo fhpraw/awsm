@@ -11,6 +11,7 @@ cups-filters,CUPS filters
 cups-pdf,CUPS PDF
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
+firefox,Standalone web browser from mozilla dot org
 kitty,A modern hackable featureful OpenGL based terminal emulator
 maim,Utility to take a screenshot using imlib2
 man-db,A utility for reading man pages
