@@ -11,15 +11,11 @@ cups-filters,CUPS filters
 cups-pdf,CUPS PDF
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
-ffmpeg,Complete solution to record convert and stream audio and video
-git,source code version control
-imagemagick,An image viewing/manipulation program
 kitty,A modern hackable featureful OpenGL based terminal emulator
 maim,Utility to take a screenshot using imlib2
 man-db,A utility for reading man pages
 mesa,An open source implementation of the OpenGL specification
 mpv,a free open source and cross platform media player
-neofetch,A CLI system information tool written in BASH that supports displaying images
 neovim,Fork of Vim aiming to improve user experience plugins and GUIs
 network-manager-applet,GUI interface network manager
 noto-fonts,Google Noto TTF fonts
@@ -33,12 +29,9 @@ pulseaudio-bluetooth,Bluetooth support for PulseAudio
 pulsemixer,CLI and curses mixer for pulseaudio
 ranger,simple vim-like file manager
 sxiv,Simple X Image Viewer
-tealdeer,a fast tldr client in rust
 tlp,Linux Advanced Power Management
 ttf-jetbrains-mono,Typeface for developers by JetBrains
 ttf-nerd-fonts-symbols-2048-em-mono,High number of extra glyphs from popular iconic fonts 2048em
-ueberzug,Command line util which allows to display images in combination with X11
-unrar,extract rar
 unzip,For extracting and viewing files in zip archives
 xclip,Command line interface to the X11 clipboard
 xdg-user-dirs,Manage user directories
@@ -48,7 +41,6 @@ xf86-video-intel,Xorg Intel video drivers
 xorg-server,Xorg X server
 xorg-xbacklight,RandR-based backlight control application
 xorg-xinit,Xorg initialisation program
-yt-dlp,A youtube-dl fork with additional features and fixes
 zathura,Minimalistic document viewer
 zathura-pdf-mupdf,PDF support for Zathura MuPDF backend support PDF ePub and OpenXPS
 zip,Compressor archiver for creating and modifying zipfiles
