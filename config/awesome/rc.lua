@@ -65,7 +65,7 @@ beautiful.init("~/.config/awesome/themes/gruv/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
-browser = "firefox"
+browser = "google-chrome-stable"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
