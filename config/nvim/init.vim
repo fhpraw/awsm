@@ -2,21 +2,21 @@
 call plug#begin( stdpath( 'data' ) . '/plugged' )
 Plug 'morhetz/gruvbox'
 "Plug 'mattn/emmet-vim'
-"Plug 'jiangmiao/auto-pairs'
-"Plug 'tpope/vim-commentary'
-"Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 "Plug 'sheerun/vim-polyglot'
-"Plug 'mhinz/vim-startify'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
-"Plug 'ryanoasis/vim-devicons'
+Plug 'mhinz/vim-startify'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Settings
 set path+=**
 set wildmenu
 set termguicolors
-"set cursorline
+set cursorline
 set incsearch
 set hlsearch
 set ignorecase
@@ -25,9 +25,9 @@ set softtabstop=4
 set expandtab
 set autoindent
 set foldmethod=manual
-"set noshowmode
-"set noshowcmd
-"set number
+set noshowmode
+set noshowcmd
+set number
 
 set background=dark
 silent! let g:gruvbox_contrast_dark = 'hard'

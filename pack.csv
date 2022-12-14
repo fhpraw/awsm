@@ -2,22 +2,25 @@ PACKAGES,DESCRIPTION
 acpi,client for battery power and thermal readings
 arandr,Provide a simple visual front end for XRandR
 awesome,highly configurable next generation framework window manager for X
-blueman,full featured bluetooth manager
+blueman,GTK bluetooth manager
 cmus,Feature rich ncurses based music player
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
+git,the fast distributed version control system
 kitty,A modern hackable featureful OpenGL based terminal emulator
 maim,Utility to take a screenshot using imlib2
 man-db,A utility for reading man pages
 mesa,An open source implementation of the OpenGL specification
 mpv,a free open source and cross platform media player
 neovim,Fork of Vim aiming to improve user experience plugins and GUIs
+networkmanager,A network manager
 network-manager-applet,GUI interface network manager
 noto-fonts,Google Noto TTF fonts
 noto-fonts-cjk,Google Noto CJK fonts
 noto-fonts-emoji,Google Noto emoji fonts
 noto-fonts-extra,Google Noto TTF fonts additional variants
 ntfs-3g,NTFS filesystem driver and utilities
+pulseaudio,A featureful general purpose sound server
 pulseaudio-alsa,ALSA Configuration for PulseAudio
 pulseaudio-bluetooth,Bluetooth support for PulseAudio
 pulsemixer,CLI and curses mixer for pulseaudio
