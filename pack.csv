@@ -7,11 +7,16 @@ cmus,Feature rich ncurses based music player
 dosfstools,DOS filesystem utilities
 exfat-utils,Utilities for exFAT file system
 git,the fast distributed version control system
+gimp,bitmap image editor
+htop,system monitor cli based
+inkscape,vector image editor
 kitty,A modern hackable featureful OpenGL based terminal emulator
+libreoffice-still,Libreoffice for conservative users
 maim,Utility to take a screenshot using imlib2
 man-db,A utility for reading man pages
 mesa,An open source implementation of the OpenGL specification
 mpv,a free open source and cross platform media player
+neofetch,system information
 neovim,Fork of Vim aiming to improve user experience plugins and GUIs
 networkmanager,A network manager
 network-manager-applet,GUI interface network manager
@@ -27,8 +32,10 @@ pulsemixer,CLI and curses mixer for pulseaudio
 ranger,simple vim-like file manager
 sxiv,Simple X Image Viewer
 tlp,Linux Advanced Power Management
+tldr,cheatsheet cli command
 ttf-jetbrains-mono,Typeface for developers by JetBrains
 ttf-nerd-fonts-symbols-2048-em-mono,High number of extra glyphs from popular iconic fonts 2048em
+unzip,extract zipfiles
 xclip,Command line interface to the X11 clipboard
 xdotool,Command line X11 automation tool
 xf86-video-amdgpu,Xorg amdgpu video driver
@@ -36,5 +43,7 @@ xf86-video-intel,Xorg Intel video drivers
 xorg-server,Xorg X server
 xorg-xbacklight,RandR-based backlight control application
 xorg-xinit,Xorg initialisation program
+yt-dlp,youtube downloader
 zathura,Minimalistic document viewer
 zathura-pdf-mupdf,PDF support for Zathura MuPDF backend support PDF ePub and OpenXPS
+zip,archiver files into zipfiles
