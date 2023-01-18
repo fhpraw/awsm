@@ -10,7 +10,7 @@ local themes_path = "~/.config/awesome/themes/gruv/"
 
 local theme = {}
 
-theme.font          = "JetBrainsMono ExtraBold 9"
+theme.font          = "Noto Sans Mono Bold 11"
 
 theme.bg_normal     = "#282828"
 theme.bg_focus      = "#504945"

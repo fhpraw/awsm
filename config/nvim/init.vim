@@ -33,7 +33,7 @@ set background=dark
 silent! let g:gruvbox_contrast_dark = 'hard'
 silent! colo gruvbox
 
-"silent! let g:airline_powerline_fonts = 1
+silent! let g:airline_powerline_fonts = 1
 "silent! let g:airline#extensions#tabline#enabled = 1
 
 " Keybindings
